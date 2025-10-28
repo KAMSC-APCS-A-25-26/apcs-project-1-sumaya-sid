@@ -10,8 +10,18 @@ public class TextAdventure
         boolean run = true;
 
         while (run) {
-            // Introduce user to the game
-            System.out.println("Welcome to Brookstore Cherry Blossoms!");
+            // Menu
+            System.out.println();
+            System.out.println();
+            System.out.println("    *******   ******");
+            System.out.println("  *****    **    *****");
+            System.out.println("  **** BrooksTale ****");
+            System.out.println("   ***            ***");
+            System.out.println("    **            **");
+            System.out.println("      **        **");
+            System.out.println("         ******");
+            System.out.println();
+            System.out.println("Welcome to BrooksTale!");
             System.out.println("1. Blossom Village");
             System.out.println("2. Partridge Village");
             System.out.println("3. CandleWood Camp");
@@ -22,17 +32,17 @@ public class TextAdventure
             int level = sc.nextInt();
             System.out.println();
 
-            // Go through each level
+            // Going through each level
             switch (level) {
                 case 1:
                     // Helpful side character introduction
                     System.out.print("Welcome investigator! \nI am Lenny the elf and here to assist you on your adventure. \nPlease enter your name: ");
                     String name = sc.nextLine();
-                    System.out.print("Nice to meet you " + name + "!");
-
-                    System.out.println("Congratulations! You've found the first piece of the puzzle. \nWould you like to continue on your remarkable journey?: ");
+                    System.out.println();
+                    System.out.println("Nice to meet you " + name + "!");
+                    System.out.print("Congratulations! You've found the first piece of the puzzle. \nWould you like to continue on your remarkable journey?: ");
                     String answer = sc.nextLine();
-                    if (answer == "N")
+                    if (answer.equals("N"))
                     {
                         run = false;
                         System.out.println("Great work investigator! Goodbye!");
