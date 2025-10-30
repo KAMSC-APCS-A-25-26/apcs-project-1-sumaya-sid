@@ -36,17 +36,17 @@ public class TextAdventure
             switch (level) {
                 case 1:
                     // Helpful side character introduction
-                    System.out.print("Welcome investigator! \nI am Lenny the elf and here to assist you on your adventure. \nPlease enter your name: ");
-                    String name = sc.nextLine();
-                    System.out.println();
-                    System.out.println("Nice to meet you " + name + "!");
-                    System.out.print("Congratulations! You've found the first piece of the puzzle. \nWould you like to continue on your remarkable journey?: ");
+                    System.out.println("Welcome investigator!");
+                    System.out.println("You're mission is to find the first key out of four here in Blossom Village.");
+                    System.out.println("It was believed by the scientists that the keys are pieces of a puzzle to opening the secret library on Starlight Island.\nThat library is suspected to have the secret solution to helping our world after the Greater-Tiered-War.");
+                    /*System.out.print("Congratulations! You've found the first piece of the puzzle. \nWould you like to continue on your remarkable journey?: ");
                     String answer = sc.nextLine();
                     if (answer.equals("N"))
                     {
                         run = false;
                         System.out.println("Great work investigator! Goodbye!");
                     }
+                    */
 
                     break;
                 default:
